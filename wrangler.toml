@@ -1,0 +1,16 @@
+name = "streamflix-pro"
+compatibility_date = "2026-09-01"
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "streamflix_db"
+database_id = "d220332e-e377-4a55-818b-8014d16c718e"
+
+# Variables de entorno para el proxy de EPG (functions/api/epg/[channelId].js)
+# Defínelas también (o en su lugar) desde el dashboard de Cloudflare Pages
+# como "Environment Variables" si prefieres no versionarlas.
+[vars]
+XTREAM_BASE_URL = "https://TU-PANEL-XTREAM.com"
+XTREAM_USER = "USUARIO"
+XTREAM_PASS = "CLAVE"
